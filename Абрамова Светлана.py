@@ -126,7 +126,7 @@ def calculate(path2file):
 
             output += f"{prod},"
 
-    return output
+    return output[:len(output)-2]
 
 '''
 Задача 7.
@@ -261,7 +261,7 @@ class Student:
     '''
 
     class MyError(Exception):
-        msg = ''
+    
 
         def __init__(self, msg):
             self.msg = msg
